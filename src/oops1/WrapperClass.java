@@ -2,7 +2,7 @@ package oops1;
 
 
 
-public class wrapperClass {
+public class WrapperClass {
     public static void main(String[] args) {
 
         // Objects

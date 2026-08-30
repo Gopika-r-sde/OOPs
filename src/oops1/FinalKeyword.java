@@ -5,7 +5,7 @@ class Purse {
     double price;
 }
 
-public class finalKeyword {
+public class FinalKeyword {
     public static void main(String[] args) {
 
         // Primitives are immutable when it is final
