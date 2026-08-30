@@ -1,7 +1,8 @@
+package oops1;
+
 class Student {
     String name = "Ashok";
     int age = 20;
-
 }
 
 public class Main {
