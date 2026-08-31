@@ -13,6 +13,19 @@ class Animal {
 //        this.name = name;
 //        Animal.legs = 4;
 //    }
+
+
+    /* say() doesn't depend on an object / instance, so it doesn't allow non-static methods */
+    static void say() {
+        System.out.println("Static method");
+//        tell();     // we cannot use tell() here, since tell() is a non-static method
+    }
+
+
+    // method or variable which is not a static, then it requires or belongs to an object / instance
+    void tell() {
+        System.out.println("I am telling");
+    }
 }
 public class staticVariable {
     public static void main(String[] args) {
@@ -29,5 +42,14 @@ public class staticVariable {
         // means static variables or methods are independent of objects
 
         System.out.println(Animal.legs);
+
+        Animal.say();  // static methods can be accessed using className
+
+        Animal ob = new Animal();
+        ob.tell();  // non-static methods are accessed via objects
+
+
+
+        /* We cannot access non-static stuff without referencing their instances in a static context */
     }
 }
