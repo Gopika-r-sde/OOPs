@@ -1,5 +1,7 @@
 package oops1;
 
+
+
 class Student {
 //    String name = "Ashok";
 //    int age = 20;
@@ -17,6 +19,7 @@ class Student {
         this.name = name;
         this.age = age;
     }
+
 }
 
 public class Main {
