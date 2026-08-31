@@ -15,7 +15,7 @@ class Animal {
 //    }
 
 
-    /* say() doesn't depend on an object / instance, so it doesn't allow non-static methods */
+    /* say() doesn't depend on an object / instance, so it doesn't allow non-static methods or variables */
     static void say() {
         System.out.println("Static method");
 //        tell();     // we cannot use tell() here, since tell() is a non-static method
