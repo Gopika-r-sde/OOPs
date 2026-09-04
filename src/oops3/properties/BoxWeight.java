@@ -15,4 +15,9 @@ public class BoxWeight extends Box {
         System.out.println("Superclass Weight " + super.weight);  // super keyword is used to refer the members that are defined in the parentclass
     }
 
+    BoxWeight(BoxWeight other) {
+        // A ParentClass variable can be used to reference any object that derived from that class
+        super(other);
+        this.weight = other.weight;
+    }
 }
