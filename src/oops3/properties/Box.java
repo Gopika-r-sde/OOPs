@@ -2,7 +2,7 @@ package oops3.properties;
 
 public class Box {
 
-    double width;
+    private double width;
     double height;
     double length;
 
