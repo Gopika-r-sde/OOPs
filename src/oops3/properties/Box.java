@@ -10,6 +10,7 @@ public class Box {
 
 
     Box() {
+        super();  // calls the Object class constructor
         this.width = 5;
         this.height = 5;
         this.length = 5;
