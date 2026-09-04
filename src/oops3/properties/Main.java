@@ -15,8 +15,8 @@ public class Main {
 //        System.out.println("Box4 :" + box4.length + " " + box4.width + " " + box4.height);
 
 
-//        BoxWeight box1 = new BoxWeight();
-//        System.out.println("Box1 :" + " " + box1.length + " " + box1.weight);
+        BoxWeight box1 = new BoxWeight();
+        System.out.println("Box1 :" + " " + box1.length + " " + box1.weight + " " + box1.width + " " + box1.height);
 
 
         // ParentClass variable can reference a ChildClass object
@@ -36,5 +36,6 @@ public class Main {
         // Therefore, this shows error
 //        BoxWeight bw2 = new Box();
 //        System.out.println(bw2.weight);
+
     }
 }
