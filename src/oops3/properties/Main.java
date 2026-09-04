@@ -1,5 +1,7 @@
 package oops3.properties;
 
+import javax.sound.sampled.BooleanControl;
+
 public class Main {
     static void main(String[] args) {
 //        Box box1 = new Box();
@@ -13,7 +15,18 @@ public class Main {
 //        System.out.println("Box4 :" + box4.length + " " + box4.width + " " + box4.height);
 
 
-        BoxWeight box1 = new BoxWeight();
-        System.out.println("Box1 :" + " " + box1.length + " " + box1.weight);
+//        BoxWeight box1 = new BoxWeight();
+//        System.out.println("Box1 :" + " " + box1.length + " " + box1.weight);
+
+
+        // ParentClass variable can reference a ChildClass object
+        Box box5 = new BoxWeight(3, 4 ,5 ,6);
+        System.out.println(box5.length + " " + box5.height +  " " + box5.width);
+
+        BoxWeight bw = (BoxWeight) box5;
+        System.out.println(bw.weight);
+
+
+
     }
 }
