@@ -26,7 +26,15 @@ public class Main {
         BoxWeight bw = (BoxWeight) box5;
         System.out.println(bw.weight);
 
+        // There are many variables in both parent and child class
+        // You are given access to the class that are of reference type i.e BoxWeight
+        // Hence, you have access to the weight variable
+        // This also means, that the one you are trying to access should be initialized
 
 
+        // But here, when the obj itself is of type parent class, how will you call the constructor of the childclass
+        // Therefore, this shows error
+//        BoxWeight bw2 = new Box();
+//        System.out.println(bw2.weight);
     }
 }
