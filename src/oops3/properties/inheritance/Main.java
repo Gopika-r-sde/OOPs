@@ -1,6 +1,4 @@
-package oops3.properties;
-
-import javax.sound.sampled.BooleanControl;
+package oops3.properties.inheritance;
 
 public class Main {
     static void main(String[] args) {
