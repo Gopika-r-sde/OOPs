@@ -4,9 +4,9 @@ public class Main {
     static void main(String[] args) {
         Shapes shape = new Shapes();
         Circle circle = new Circle();
-        Triangle triangle = new Triangle();
-        shape.area();
-        circle.area();
+        Shapes triangle = new Triangle();  // it prints the method defined in the triangle class
+//        shape.area();
+//        circle.area();
         triangle.area();
     }
 }
