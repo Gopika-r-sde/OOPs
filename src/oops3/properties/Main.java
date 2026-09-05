@@ -37,5 +37,12 @@ public class Main {
 //        BoxWeight bw2 = new Box();
 //        System.out.println(bw2.weight);
 
+
+        BoxPrice bp = new BoxPrice();
+        System.out.println(bp.weight + " " + bp.cost + " " + bp.length + " " + bp.height + " " + bp.width);
+
+        BoxPrice bp2 = new BoxPrice(5, 13, 500);
+        System.out.println(bp2.weight + " " + bp2.cost );
+        System.out.println(bp2.length + " " + bp2.width + " " + bp2.height);
     }
 }

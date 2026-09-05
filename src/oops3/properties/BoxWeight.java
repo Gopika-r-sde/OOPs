@@ -12,12 +12,17 @@ public class BoxWeight extends Box {
         // when width is private, here how width is used means, the class which has width only accessing, not the BoxWeight class
 
         this.weight = weight;
-        System.out.println("Superclass Weight " + super.weight);  // super keyword is used to refer the members that are defined in the parentclass
+//        System.out.println("Superclass Weight " + super.weight);  // super keyword is used to refer the members that are defined in the parentclass
     }
 
     BoxWeight(BoxWeight other) {
         // A ParentClass variable can be used to reference any object that derived from that class
         super(other);
         this.weight = other.weight;
+    }
+
+    BoxWeight(double side, double weight) {
+        super(side);
+        this.weight = weight;
     }
 }
