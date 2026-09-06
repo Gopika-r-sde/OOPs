@@ -1,6 +1,8 @@
 package oops3.properties.polymorphism;
 
-public class Numbers {
+// this class cannot be inherited
+
+final public class Numbers {
     double sum(double a, int b) {
         return a+b;
     }

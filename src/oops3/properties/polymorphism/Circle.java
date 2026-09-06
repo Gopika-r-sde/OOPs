@@ -12,4 +12,9 @@ public class Circle extends Shapes{
         System.out.println("Area of circle is pie * r * r");
     }
 
+     // shows error
+//    void say() {
+//
+//    }
+
 }
