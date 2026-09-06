@@ -8,5 +8,14 @@ public class Main {
 //        shape.area();
 //        circle.area();
         triangle.area();
+
+
+        Shapes s = new Shapes();
+        Shapes t = new Circle();
+
+        Shapes.greet();
+
+//        s.greet();  // output of shapes class
+//        t.greet();  // output of shapes class
     }
 }

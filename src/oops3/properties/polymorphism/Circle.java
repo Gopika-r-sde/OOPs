@@ -17,4 +17,8 @@ public class Circle extends Shapes{
 //
 //    }
 
+    static  void greet() {
+        System.out.println("Hey, I am in Circle Class static method");
+    }
+
 }

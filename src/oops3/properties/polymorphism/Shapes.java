@@ -12,4 +12,8 @@ public class Shapes {
         System.out.println("Hey, It is Final method in Shapes Class.");
     }
 
+    static void greet() {
+        System.out.println("Hey, I am in Shapes Class static method");
+    }
+
 }
