@@ -2,9 +2,14 @@ package oops5.abstractDemo;
 
 public class Daughter extends Parent {
 
+    public Daughter(int age) {
+//        super(age);
+        this.age = age;
+    }
+
     @Override
     void career() {
-        System.out.println("I am going to become a stylist");
+        System.out.println("I am going to become a stylist" + " " +  "My age is " + age) ;
     }
 
     @Override
