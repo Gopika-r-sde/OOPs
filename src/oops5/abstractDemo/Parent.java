@@ -8,6 +8,8 @@ public abstract class Parent {
 //        this.age = age;
 //    }
 
+//    abstract Parent();  // cannot create abstract constructor
+
     abstract void career();
     abstract void partner();
 }
