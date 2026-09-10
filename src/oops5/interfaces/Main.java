@@ -2,15 +2,23 @@ package oops5.interfaces;
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
+//        Car car = new Car();
+//
+//        car.brake();
+//        car.accelerate();
+//        car.start();
+//        car.stop();
+//
+//        Engine car2 = new Car();
+//        car2.accelerate();
+//        car2.a;  //
 
-        car.brake();
-        car.accelerate();
-        car.start();
-        car.stop();
+        NiceCar car = new NiceCar();
+        car.startEngine();
+        car.stopEngine();
+        car.startMusic();
+        car.stopMusic();
+        car.upgradeEngine();
 
-        Engine car2 = new Car();
-        car2.accelerate();
-//        car2.a;
     }
 }
