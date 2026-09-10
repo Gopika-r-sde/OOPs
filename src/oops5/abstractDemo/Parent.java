@@ -4,6 +4,14 @@ public abstract class Parent {
 
     int age;
 
+    static int a;
+    final int b;
+
+    public Parent(int a) {
+        Parent.a = a;
+        b = 5;
+    }
+
 //    public Parent(int age) {
 //        this.age = age;
 //    }

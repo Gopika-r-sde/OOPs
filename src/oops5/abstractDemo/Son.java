@@ -2,9 +2,13 @@ package oops5.abstractDemo;
 
 public class Son extends Parent {
 
-    public Son(int age) {
-//        super(age);
-        this.age = age;
+//    public Son(int age) {
+////        super(age);
+//        this.age = age;
+//    }
+
+    public Son(int a) {
+        super(a);
     }
 
     @Override
