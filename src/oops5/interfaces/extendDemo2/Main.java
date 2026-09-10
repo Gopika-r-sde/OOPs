@@ -5,6 +5,7 @@ public class Main implements B {
         Main m = new Main();
         m.greet();
         m.fun();
+        A.staticFun();
     }
 
     @Override
@@ -12,8 +13,8 @@ public class Main implements B {
         System.out.println("greet");
     }
 
-//    @Override
-//    public void fun() {
-//        System.out.println("fun");
-//    }
+    @Override
+    public void fun() {
+        System.out.println("fun");
+    }
 }
