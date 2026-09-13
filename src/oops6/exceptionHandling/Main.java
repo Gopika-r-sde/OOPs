@@ -6,12 +6,15 @@ public class Main {
         int b = 0;
         try {
 //            divide(a, b);
-            throw new Exception();   // mimicking
+//            throw new Exception();   // mimicking
+
+            throw new MyException("This is my own exception");
         }
 
         // catch blocks must be in the order like which is the most prioritized exception that should be defined first
-
-        catch (ArithmeticException e) {
+        catch (MyException e) {
+            System.out.println(e.getMessage());
+        } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         } catch (Exception e) {
             System.out.println("Common Exception");
