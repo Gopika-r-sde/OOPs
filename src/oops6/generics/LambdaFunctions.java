@@ -1,6 +1,7 @@
 package oops6.generics;
 
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 public class LambdaFunctions {
     static void main(String[] args) {
@@ -10,6 +11,10 @@ public class LambdaFunctions {
             list.add(i);
         }
 
-        list.forEach((item) -> System.out.println(item + 1));
+//        list.forEach((item) -> System.out.println(item + 1));
+
+        // Consumer -> Functional Interface
+        Consumer<Integer> consumer = (item) -> System.out.println(item * 2);
+        list.forEach(consumer);
     }
 }
