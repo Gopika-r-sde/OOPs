@@ -7,10 +7,10 @@ public class Human implements Cloneable {
         this.name = name;
         this.age = age;
     }
-    public Human(Human other) {
-        this.name = other.name;
-        this.age = other.age;
-    }
+//    public Human(Human other) {
+//        this.name = other.name;
+//        this.age = other.age;
+//    }
 
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
