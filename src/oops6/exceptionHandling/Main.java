@@ -5,19 +5,26 @@ public class Main {
         int a = 5;
         int b = 0;
         try {
-            divide(a, b);
-        } catch (Exception e) {
+//            divide(a, b);
+            throw new Exception();   // mimicking
+        }
+
+        // catch blocks must be in the order like which is the most prioritized exception that should be defined first
+
+        catch (ArithmeticException e) {
             System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Common Exception");
         } finally {
             // finally block helps to close the opened file!!!
             System.out.println("Code Executed Successfully");
         }
     }
 
-    static int divide(int a, int b) throws ArithmeticException{
-        if(b == 0) {
-            throw new ArithmeticException("Divide by zero");
-        }
-        return a / b;
-    }
+//    static int divide(int a, int b) throws ArithmeticException{
+//        if(b == 0) {
+//            throw new ArithmeticException("Divide by zero");
+//        }
+//        return a / b;
+//    }
 }
