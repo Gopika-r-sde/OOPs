@@ -22,17 +22,19 @@ public class Main {
         System.out.println(Arrays.toString(h4.arr));
 
 
-        // shallow copy
+        // shallow copy & deep copy
 
         h4.arr[0] = 4;
 
-        System.out.println(Arrays.toString(h4.arr) + "h4 array");
-        System.out.println(Arrays.toString(h3.arr) + "h3 array");
+        System.out.println("h4 array" + " " + Arrays.toString(h4.arr));
+        System.out.println("h3 array" + " " + Arrays.toString(h3.arr));
 
         h4.age = 35;
         System.out.println( "h4" + " " + h4.age);
         System.out.println( "h3" + " " + h3.age);
 
 
+        // deep copy -> changes made in one object does not affect the other object
+        // shallow copy -> changes made in one object affects the other object
     }
 }

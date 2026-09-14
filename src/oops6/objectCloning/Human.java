@@ -14,7 +14,18 @@ public class Human implements Cloneable {
 //        this.age = other.age;
 //    }
 
+    // shallow copy
+//    public Object clone() throws CloneNotSupportedException {
+//        return super.clone();  // shallow copy
+//    }
+
     public Object clone() throws CloneNotSupportedException {
-        return super.clone();  // shallow copy
+        Human clone = (Human) super.clone();
+
+        clone.arr = new int[clone.arr.length];
+        for (int i = 0; i < clone.arr.length; i++) {
+            clone.arr[i] = arr[i];
+        }
+        return clone;
     }
 }
